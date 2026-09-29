@@ -1,0 +1,36 @@
+desktop-image: "nimbos.png"
+
+title-text: "NIMBOS"
+title-font: "DejaVu Sans Bold 32"
+title-color: "#39FF14"
+
++ label {
+  top = 18%
+  left = 50%
+  width = 40%
+  align = "center"
+  text = "Powered by the Storm."
+  color = "#39FF14"
+  font = "DejaVu Sans 18"
+}
+
++ boot_menu {
+  left = 25%
+  top = 38%
+  width = 50%
+  height = 35%
+  item_font = "DejaVu Sans 18"
+  item_color = "#FFFFFF"
+  selected_item_color = "#39FF14"
+  item_height = 45
+}
+
++ label {
+  left = 25%
+  top = 90%
+  width = 50%
+  align = "center"
+  text = "NimbOS 0.1 — First Storm"
+  color = "#526852"
+  font = "DejaVu Sans 14"
+}
