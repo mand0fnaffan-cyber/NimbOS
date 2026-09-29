@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs>
+  <radialGradient id="glow" cx="50%" cy="48%" r="45%">
+    <stop offset="0" stop-color="#102010"/>
+    <stop offset="0.45" stop-color="#050905"/>
+    <stop offset="1" stop-color="#010201"/>
+  </radialGradient>
+
+  <filter id="boltGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="18" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <linearGradient id="bolt" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#9CFF80"/>
+    <stop offset="0.45" stop-color="#39FF14"/>
+    <stop offset="1" stop-color="#18B800"/>
+  </linearGradient>
+</defs>
+
+<rect width="1920" height="1080" fill="url(#glow)"/>
+
+<!-- subtle storm haze -->
+<path d="M0 260 Q400 170 800 250 T1600 220 T1920 260"
+      fill="none" stroke="#102510" stroke-width="90" opacity="0.18"/>
+
+<path d="M0 820 Q400 730 800 810 T1600 780 T1920 820"
+      fill="none" stroke="#0A170A" stroke-width="110" opacity="0.2"/>
+
+<!-- NimbOS lightning -->
+<g filter="url(#boltGlow)">
+  <path d="M1040 105
+           L785 515
+           L955 500
+           L835 965
+           L1190 430
+           L1010 448
+           Z"
+        fill="url(#bolt)"
+        stroke="#39FF14"
+        stroke-width="7"
+        stroke-linejoin="round"/>
+</g>
+
+<!-- small atmospheric sparks -->
+<g fill="#39FF14" opacity="0.55">
+  <circle cx="690" cy="430" r="3"/>
+  <circle cx="1240" cy="570" r="4"/>
+  <circle cx="720" cy="700" r="2"/>
+  <circle cx="1180" cy="760" r="3"/>
+</g>
+
+<text x="960" y="1015"
+      text-anchor="middle"
+      font-family="Arial, sans-serif"
+      font-size="28"
+      font-weight="bold"
+      letter-spacing="12"
+      fill="#526852">
+  NIMBOS
+</text>
+</svg>
