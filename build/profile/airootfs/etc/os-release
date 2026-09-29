@@ -1,0 +1,10 @@
+NAME="NimbOS"
+PRETTY_NAME="NimbOS 0.1"
+ID=nimbos
+ID_LIKE=arch
+BUILD_ID=rolling
+ANSI_COLOR="1;32"
+HOME_URL="https://github.com/mand0fnaffan-cyber/NimbOS"
+DOCUMENTATION_URL="https://github.com/mand0fnaffan-cyber/NimbOS"
+SUPPORT_URL="https://github.com/mand0fnaffan-cyber/NimbOS"
+BUG_REPORT_URL="https://github.com/mand0fnaffan-cyber/NimbOS/issues"
